@@ -1,22 +1,29 @@
 const container=document.querySelector('.container');
-
-for(i=0;i<16;i++)
-{
+var slider=document.getElementById("myRange");
+slider.oninput=function(){
+container.textContent='';
+n=this.value;
+for(i=0;i<n;i++)
+{ 
     const firstrow=document.createElement('div');
     firstrow.classList.add('firstrow');
     //firstrow.textContent=` ${i}`;
     container.appendChild(firstrow);
-    for(j=i*16+1;j<=(i+1)*16;j++)
+    for(j=0;j<n;j++)
     {
         const element=document.createElement('div');
         element.classList.add('element');
-        element.textContent=` ${j}`;
+        element.textContent=``;
         firstrow.appendChild(element);
     }
-
 }
 const elements=document.querySelectorAll('.element');
-elements.addEventListener("mouseover", (event)=>
+     for(i=0;i<elements.length; i++)
+elements[i].addEventListener('mouseover', (event)=>
 {
-    event.target.style.color="purple";
+    event.target.style.backgroundColor='purple';
 });
+} 
+
+
+
