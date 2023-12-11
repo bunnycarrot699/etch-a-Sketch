@@ -1,27 +1,26 @@
 body{
     display:flex;
     flex-direction: column;
-    text-align: center;
-    justify-content: center;
+    align-items: center;
+    
  
 }
 .container{
     display:flex;
-    flex-direction: row;
     height:600px;
     width:600px;
-    border: 1px solid grey;
+    border: 1px solid orange;
     
 }
 .firstrow{
     display:flex;
     flex-direction: column;
     width: 100%;
-    height: 100%;
+    
     
 }
 .element{
-    border: 1px solid grey;
+    border: 1px solid orange;
     width: 100%;
     height: 100%;
 }
@@ -31,11 +30,11 @@ body{
     color:purple;
 }
 .slidercontainer{
-    width:60%;
+    width:90%;
 }
 
 .slider{
-    width:60%;
+    width:100%;
     height:25px;
     background: orange;
     opacity:0.7;
