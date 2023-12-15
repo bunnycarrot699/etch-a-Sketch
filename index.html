@@ -8,8 +8,16 @@
 </head>
 <body>
     <div id="title">Etch-a-Sketch</div>
+    <div class="option">
+        <input type="radio" id="Default" name="butons" value="Default">  
+        <label for="Default">Default </label>
+        <input type="radio" id="Gradual" name="butons" value="Gradual">    
+        <label for="Gradual">Gradual </label>
+        <input type="radio" id="Rainbow" name="butons" value="Rainbow"> 
+        <label for="Rainbow">Rainbow </label>  
+    </div>
     <div class="slidecontainer">
-        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+        <input type="range" min="1" max="100" value="16" class="slider" id="myRange">
     </div>
     <div class="container"></div>
     <script src="sketch.js"></script>

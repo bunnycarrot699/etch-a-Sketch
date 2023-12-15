@@ -2,13 +2,14 @@ body{
     display:flex;
     flex-direction: column;
     align-items: center;
-    
- 
+    gap:10px;
+    accent-color: orange;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .container{
     display:flex;
-    height:600px;
-    width:600px;
+    height:900px;
+    width:900px;
     border: 1px solid orange;
     
 }
@@ -17,12 +18,12 @@ body{
     flex-direction: column;
     width: 100%;
     
-    
 }
 .element{
     border: 1px solid orange;
     width: 100%;
     height: 100%;
+    background: rgba(160,32,240, 0);
 }
 #title{
     font-size:40px;
@@ -30,12 +31,43 @@ body{
     color:purple;
 }
 .slidercontainer{
-    width:90%;
+    width:600px;
 }
 
 .slider{
-    width:100%;
-    height:25px;
+    -webkit-appearance: none; 
+    width: 600px;;
+    height:7px;
     background: orange;
     opacity:0.7;
+    border-radius: 5px;
+    
 }
+
+.slider::-webkit-slider-thumb{
+    -webkit-appearance:none;
+    appearance:none;
+    width: 25px;
+    height: 25px;
+    background: purple;
+    cursor: pointer;
+}
+.option{
+    display: flex;
+    gap:10px;
+}
+.option input[type="radio"] {
+    opacity: 0;
+    position: fixed;
+    width: 0;
+  }
+.option label {
+    display: inline-block;
+    background-color:white ;
+    padding: 10px 20px;
+    font-size: 20px;
+    border: 4px solid rgb(244, 171, 1);
+    border-radius: 4px;
+    color: purple ;
+}
+
